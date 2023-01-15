@@ -7,7 +7,7 @@ import {
   Footer,
   Aside,
 } from "./src/components/landmarks";
-import { FP } from "@fpkit/react";
+import { FP, Button } from "@fpkit/react";
 
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
@@ -35,7 +35,14 @@ export default function Layout({ children, pageOpts, themeConfig }: NextraThemeL
         })}
       </Nav>
       <Header>
-          <h2>Title</h2>
+          <FP as="h2" styles={{ '--fs': "var(--h1)"}}>
+            {themeConfig.logo}
+          </FP>
+          <p>
+            <Button disabled={false} type="button" data-variant="primary">
+              Get Started
+            </Button>
+          </p>
       </Header>
       <Main>
         <FP as="section">{children}</FP>
