@@ -15,7 +15,7 @@ import useTilg from "tilg";
 
 import type { NextraThemeLayoutProps } from "./src/types";
 
-export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
+export default function Layout({ children, pageOpts, themeConfig }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
   useTilg();
 
@@ -23,9 +23,9 @@ export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
     <>
       <Nav>
         <li>
-          <h1>
-            <Link href="/">Home</Link>
-          </h1>
+          <FP as="h1" styles={{ '--fs': '1.5rem'}}>
+            <Link href="/">{ themeConfig.logo}</Link>
+          </FP>
         </li>
         {pageMap.map((item) => {
           if (item.kind === "MdxPage" && item.route !== "/") {
