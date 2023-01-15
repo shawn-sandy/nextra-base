@@ -1,18 +1,19 @@
 import Link from "next/link";
-import Nav from "./components/nav";
-// import type { NextraThemeLayoutProps } from 'nextra'
+import Nav, { NavItem } from "./src/components/nav";
+import {
+  Header,
+  Main,
+  Section,
+  Footer,
+  Aside,
+} from "./src/components/landmarks";
+import { FP } from "@fpkit/react";
 
-import type { PageOpts } from "nextra";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
 import useTilg from "tilg";
 
-export type NextraThemeLayoutProps = {
-  pageOpts: PageOpts;
-  pageProps: any;
-  themeConfig: any | null;
-  children: React.ReactNode;
-};
+import type { NextraThemeLayoutProps } from "./src/types";
 
 export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
@@ -20,22 +21,29 @@ export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
 
   return (
     <>
-      <h1>My Theme</h1>
       <Nav>
+        <li>
+          <h1>
+            <Link href="/">Home</Link>
+          </h1>
+        </li>
         {pageMap.map((item) => {
-          if (item.kind === "MdxPage") {
-            return (
-              <li>
-                <Link key={item.name} href={item.route}>
-                  {item.name}
-                </Link>
-              </li>
-            );
+          if (item.kind === "MdxPage" && item.route !== "/") {
+            return <NavItem key={item.name} item={item} />;
           }
           return null;
         })}
       </Nav>
-      <div style={{ border: "1px solid" }}>{children}</div>
+      <Header>
+          <h2>Title</h2>
+      </Header>
+      <Main>
+        <FP as="section">{children}</FP>
+      </Main>
+      <hr />
+      <Footer>
+        <p>Copyright &copy; 2022</p>
+      </Footer>
     </>
   );
 }
