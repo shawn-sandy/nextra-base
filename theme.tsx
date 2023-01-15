@@ -39,7 +39,7 @@ export default function Layout({ children, pageOpts, themeConfig }: NextraThemeL
             {themeConfig.logo}
           </FP>
           <p>
-            <Button disabled={false} type="button" data-variant="primary">
+            <Button type="button" data-variant="primary">
               Get Started
             </Button>
           </p>

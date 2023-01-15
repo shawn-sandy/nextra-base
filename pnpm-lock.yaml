@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fpkit/react': ^0.2.19
+  '@fpkit/react': ^0.2.40
   '@types/node': 18.11.10
   next: ^13.1.2
   nextra: 2.2.3
@@ -13,7 +13,7 @@ specifiers:
   typescript: ^4.9.3
 
 dependencies:
-  '@fpkit/react': 0.2.19
+  '@fpkit/react': 0.2.40
   next: 13.1.2_biqbaboplfbrettd7655fr4n2y
   nextra: 2.2.3_7jnwqgtpcnwg4nzft4b6xlzlfi
   nextra-theme-docs: 2.2.3_7jnwqgtpcnwg4nzft4b6xlzlfi
@@ -35,10 +35,11 @@ packages:
       regenerator-runtime: 0.13.11
     dev: false
 
-  /@fpkit/react/0.2.19:
-    resolution: {integrity: sha512-YfB/kWcwde6Ert0cSySkdlmbC4ejey9kL1Gsig/X5ivB/ipi6kigaAOffnjV9//LWV49Bwk1y3hhX32yfxQpzQ==}
+  /@fpkit/react/0.2.40:
+    resolution: {integrity: sha512-VHU014KntyuCnERTi9fLyMLU8Z0bA4ujVIURaPVBiJFFRIc3x+EHoqputyWpxLDa16KtYUGRLvSbQbD/wQfw2g==}
     dependencies:
       '@shawnsandy/first-paint': 2.17.29
+      focus-trap: 7.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
@@ -695,6 +696,12 @@ packages:
 
   /flexsearch/0.7.31:
     resolution: {integrity: sha512-XGozTsMPYkm+6b5QL3Z9wQcJjNYxp0CYn3U1gO7dwD6PAqU1SVWZxI9CCg3z+ml3YfqdPnrBehaBrnH2AGKbNA==}
+    dev: false
+
+  /focus-trap/7.2.0:
+    resolution: {integrity: sha512-v4wY6HDDYvzkBy4735kW5BUEuw6Yz9ABqMYLuTNbzAFPcBOGiGHwwcNVMvUz4G0kgSYh13wa/7TG3XwTeT4O/A==}
+    dependencies:
+      tabbable: 6.0.1
     dev: false
 
   /focus-visible/5.2.0:
@@ -2014,6 +2021,10 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       has-flag: 2.0.0
+    dev: false
+
+  /tabbable/6.0.1:
+    resolution: {integrity: sha512-SYJSIgeyXW7EuX1ytdneO5e8jip42oHWg9xl/o3oTYhmXusZVgiA+VlPvjIN+kHii9v90AmzTZEBcsEvuAY+TA==}
     dev: false
 
   /tilg/0.1.1_react@18.2.0:
