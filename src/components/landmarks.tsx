@@ -4,38 +4,43 @@
 
 import { FP } from "@fpkit/react";
 
-export const Header = ({ children }: { children: React.ReactNode }) => {
+export const Header = ({ children, ...props }: { children: React.ReactNode }) => {
   return (
-    <FP as="header">
+    <FP as="header" {...props}>
       <FP as="section">{children}</FP>
     </FP>
   );
 };
 
-export const Main = ({ children }: { children: React.ReactNode }) => {
+export const Main = ({ children, ...props }: { children: React.ReactNode }) => {
   return (
-    <FP as="main">
+    <FP as="main" {...props}>
+      {children}
+    </FP>
+  );
+};
+
+export const Footer = ({ children, ...props }: { children: React.ReactNode }) => {
+  return (
+    <FP as="footer" {...props}>
       <FP as="section">{children}</FP>
     </FP>
   );
 };
 
-export const Footer = ({ children }: { children: React.ReactNode }) => {
+export const Aside = ({ children, ...props }: { children: React.ReactNode }) => {
   return (
-    <FP as="footer">
+    <FP as="aside" {...props}>
       <FP as="section">{children}</FP>
     </FP>
   );
 };
 
-export const Aside = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <FP as="aside">
-      <FP as="section">{children}</FP>
-    </FP>
-  );
+export const Section = ({ children, ...props }: { children: React.ReactNode }) => {
+  return <FP as="section" {...props}>{children}</FP>;
 };
 
-export const Section = ({ children }: { children: React.ReactNode }) => {
-  return <FP as="section">{children}</FP>;
+
+export const Article = ({ children, ...props }: { children: React.ReactNode }) => {
+  return <FP as="article" {...props}>{children}</FP>;
 };
