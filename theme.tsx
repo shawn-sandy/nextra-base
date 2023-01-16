@@ -55,7 +55,10 @@ export default function Layout({
       </Header>
       <Main>
         <Section data-content>
-          <Article>{children}</Article>
+          <Article>
+            { (pageOpts.route === '/') ? <h1>Home</h1> : children }
+            
+            </Article>
           <Aside>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
