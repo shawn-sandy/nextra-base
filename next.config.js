@@ -1,5 +1,5 @@
 const withNextra = require('nextra')({
-  theme: './theme.tsx',
+  theme: './src/themes/theme.tsx',
   themeConfig: './theme.config.tsx',
 })
 

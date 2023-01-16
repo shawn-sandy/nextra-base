@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Nav, { NavItem } from "./src/components/nav";
+import Nav, { NavItem } from "../components/nav";
 import {
   Header,
   Main,
@@ -7,14 +7,14 @@ import {
   Footer,
   Aside,
   Article,
-} from "./src/components/landmarks";
+} from "../components/landmarks";
 import { FP, Button } from "@fpkit/react";
 
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
 import useTilg from "tilg";
 
-import type { NextraThemeLayoutProps } from "./src/types";
+import type { NextraThemeLayoutProps } from "../types";
 
 export default function Layout({
   children,
