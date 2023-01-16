@@ -39,7 +39,7 @@ export default function Layout({ children, pageOpts, themeConfig }: NextraThemeL
             {themeConfig.logo}
           </FP>
           <p>
-            <Button type="button" data-variant="primary">
+            <Button type="button" data-variant="primary" styles={{ '--btn-radius': 'var(--btn-pill)'}}>
               Get Started
             </Button>
           </p>
