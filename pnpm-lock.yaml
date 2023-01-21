@@ -1,11 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fpkit/react': ^0.2.44
+  '@fpkit/react': ^0.2.45
   '@types/node': 18.11.18
   next: ^13.1.4
-  nextra: 2.2.9
-  nextra-theme-docs: 2.2.9
+  nextra: 2.2.10
+  nextra-theme-docs: 2.2.10
   react: ^18.2.0
   react-dom: ^18.2.0
   tilg: ^0.1.1
@@ -13,10 +13,10 @@ specifiers:
   typescript: ^4.9.4
 
 dependencies:
-  '@fpkit/react': 0.2.44
+  '@fpkit/react': 0.2.45
   next: 13.1.4_biqbaboplfbrettd7655fr4n2y
-  nextra: 2.2.9_gru2niblrprbai56sdagiiy5sa
-  nextra-theme-docs: 2.2.9_gru2niblrprbai56sdagiiy5sa
+  nextra: 2.2.10_gru2niblrprbai56sdagiiy5sa
+  nextra-theme-docs: 2.2.10_gru2niblrprbai56sdagiiy5sa
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -28,15 +28,15 @@ devDependencies:
 
 packages:
 
-  /@babel/runtime/7.20.7:
-    resolution: {integrity: sha512-UF0tvkUtxwAgZ5W/KrkHf0Rn0fdnLDU9ScxBrEVNUprE/MzirjK4MJUX1/BVDv00Sv8cljtukVK1aky++X1SjQ==}
+  /@babel/runtime/7.20.13:
+    resolution: {integrity: sha512-gt3PKXs0DBoL9xCvOIIZ2NEqAGZqHjAnmVbfQtB620V0uReIQutpel14KcneZuer7UioY8ALKZ7iocavvzTNFA==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
     dev: false
 
-  /@fpkit/react/0.2.44:
-    resolution: {integrity: sha512-DdzgM2yePgZUy+D0kZZTRD0/LWvscpHYeZIosZ95ZaJwTxeWj/Oh3YaF8bZHZQXlVRzN/GW886eM7CTN3NgMYA==}
+  /@fpkit/react/0.2.45:
+    resolution: {integrity: sha512-4NPrYPd2Ipj1CngoHd30uLHbZtmY0R9YW+ntECUC7p492SMkTlUc5Fz+oyus68bzMTrCqGWv/NjuOXM+wV+IMA==}
     dependencies:
       '@shawnsandy/first-paint': 2.17.32
       focus-trap: 7.2.0
@@ -63,7 +63,7 @@ packages:
       '@types/mdx': 2.0.3
       estree-util-build-jsx: 2.2.2
       estree-util-is-identifier-name: 2.1.0
-      estree-util-to-js: 1.1.0
+      estree-util-to-js: 1.1.1
       estree-walker: 3.0.3
       hast-util-to-estree: 2.2.1
       markdown-extensions: 1.1.1
@@ -592,8 +592,8 @@ packages:
     hasBin: true
     dev: false
 
-  /estree-util-attach-comments/2.1.0:
-    resolution: {integrity: sha512-rJz6I4L0GaXYtHpoMScgDIwM0/Vwbu5shbMeER596rB2D1EWF6+Gj0e0UKzJPZrpoOc87+Q2kgVFHfjAymIqmw==}
+  /estree-util-attach-comments/2.1.1:
+    resolution: {integrity: sha512-+5Ba/xGGS6mnwFbXIuQiDPTbuTxuMCooq3arVv7gPZtYpjp+VXH/NkHAP35OOefPhNG/UGqU3vt/LTABwcHX0w==}
     dependencies:
       '@types/estree': 1.0.0
     dev: false
@@ -610,8 +610,8 @@ packages:
     resolution: {integrity: sha512-bEN9VHRyXAUOjkKVQVvArFym08BTWB0aJPppZZr0UNyAqWsLaVfAqP7hbaTJjzHifmB5ebnR8Wm7r7yGN/HonQ==}
     dev: false
 
-  /estree-util-to-js/1.1.0:
-    resolution: {integrity: sha512-490lbfCcpLk+ofK6HCgqDfYs4KAfq6QVvDw3+Bm1YoKRgiOjKiKYGAVQE1uwh7zVxBgWhqp4FDtp5SqunpUk1A==}
+  /estree-util-to-js/1.1.1:
+    resolution: {integrity: sha512-tW/ADSJON4o+T8rSmSX1ZXdat4n6bVOu0iTUFY9ZFF2dD/1/Hug8Lc/HYuJRA4Mop9zDZHQMo1m4lIxxJHkTjQ==}
     dependencies:
       '@types/estree-jsx': 1.0.0
       astring: 1.8.4
@@ -625,8 +625,8 @@ packages:
       is-plain-obj: 3.0.0
     dev: false
 
-  /estree-util-visit/1.2.0:
-    resolution: {integrity: sha512-wdsoqhWueuJKsh5hqLw3j8lwFqNStm92VcwtAOAny8g/KS/l5Y8RISjR4k5W6skCj3Nirag/WUCMS0Nfy3sgsg==}
+  /estree-util-visit/1.2.1:
+    resolution: {integrity: sha512-xbgqcrkIVbIG+lI/gzbvd9SGTJL4zqJKBFttUl5pP27KhAjtMKbX/mQXJ7qgyXpMgVy/zvpm0xoQQaGL8OloOw==}
     dependencies:
       '@types/estree-jsx': 1.0.0
       '@types/unist': 2.0.6
@@ -759,7 +759,7 @@ packages:
       '@types/hast': 2.3.4
       '@types/unist': 2.0.6
       comma-separated-tokens: 2.0.3
-      estree-util-attach-comments: 2.1.0
+      estree-util-attach-comments: 2.1.1
       estree-util-is-identifier-name: 2.1.0
       hast-util-whitespace: 2.0.1
       mdast-util-mdx-expression: 1.3.1
@@ -767,7 +767,7 @@ packages:
       property-information: 6.2.0
       space-separated-tokens: 2.0.2
       style-to-object: 0.4.1
-      unist-util-position: 4.0.3
+      unist-util-position: 4.0.4
       zwitch: 2.0.4
     transitivePeerDependencies:
       - supports-color
@@ -961,7 +961,7 @@ packages:
   /match-sorter/6.3.1:
     resolution: {integrity: sha512-mxybbo3pPNuA+ZuCUhm5bwNkXrJTbsk5VWbR5wiwz/GC6LIiegBGn2w3O08UG/jdbYLinw51fSQ5xNU1U3MgBw==}
     dependencies:
-      '@babel/runtime': 7.20.7
+      '@babel/runtime': 7.20.13
       remove-accents: 0.4.2
     dev: false
 
@@ -1130,7 +1130,7 @@ packages:
       trim-lines: 3.0.1
       unist-builder: 3.0.0
       unist-util-generated: 2.0.1
-      unist-util-position: 4.0.3
+      unist-util-position: 4.0.4
       unist-util-visit: 4.1.1
     dev: false
 
@@ -1423,7 +1423,7 @@ packages:
     dependencies:
       '@types/acorn': 4.0.6
       '@types/estree': 1.0.0
-      estree-util-visit: 1.2.0
+      estree-util-visit: 1.2.1
       micromark-util-types: 1.0.2
       uvu: 0.5.6
       vfile-location: 4.0.1
@@ -1605,8 +1605,8 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /nextra-theme-docs/2.2.9_gru2niblrprbai56sdagiiy5sa:
-    resolution: {integrity: sha512-/w3Ozie2VWosJb3Gwnp/tYuOHacMGw1TvzbgUTBr2MzRDpdT6KR5OKcvxZVWSfU/x1hU4HDm419IOFkYBDb01A==}
+  /nextra-theme-docs/2.2.10_gru2niblrprbai56sdagiiy5sa:
+    resolution: {integrity: sha512-ciTZlERSXsNLgirfhAfK6vs1URWAb9bD0ai1ckfxNn+gDDNoHvV/RtCMco49+comhbCN24ZSP0lyIzb5ErKngw==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'
@@ -1629,8 +1629,8 @@ packages:
       zod: 3.20.2
     dev: false
 
-  /nextra/2.2.9_gru2niblrprbai56sdagiiy5sa:
-    resolution: {integrity: sha512-6S9v0vlkocxrnQBdsZ/4A2BXyfJ9z/Bp8Ai7yY/N6tbIReoKbALTnmZLTdtNSr7GQrXrZnHTTOveW8vDSf+ohQ==}
+  /nextra/2.2.10_gru2niblrprbai56sdagiiy5sa:
+    resolution: {integrity: sha512-t9Eo/YPYMhhWWQIQw3vX3sYU4BlHne31G+jAl8V+wEyySRgLM7XcrZm/Kdl7cHV1sgUyT3kLZ+fLavZusCCMwg==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'
@@ -2101,8 +2101,8 @@ packages:
       '@types/unist': 2.0.6
     dev: false
 
-  /unist-util-position/4.0.3:
-    resolution: {integrity: sha512-p/5EMGIa1qwbXjA+QgcBXaPWjSnZfQ2Sc3yBEEfgPwsEmJd8Qh+DSk3LGnmOM4S1bY2C0AjmMnB8RuEYxpPwXQ==}
+  /unist-util-position/4.0.4:
+    resolution: {integrity: sha512-kUBE91efOWfIVBo8xzh/uZQ7p9ffYRtUbMRZBNFYwf0RK8koUMx6dGUfwylLOKmaT2cs4wSW96QoYUSXAyEtpg==}
     dependencies:
       '@types/unist': 2.0.6
     dev: false

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Nav, { NavItem } from "../components/nav";
-import { FP, Button, Aside, Header, Main, Footer, Section, Article } from "@fpkit/react";
+import { FP, Box, Button, Aside, Header, Main, Footer, Section, Article, Title } from "@fpkit/react";
 
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
@@ -20,9 +20,9 @@ export default function Layout({
     <>
       <Nav>
         <li>
-          <FP as="h1" styles={{ "--fs": "1.5rem" }}>
+          <Box as="h1" styles={{ "--fs": "1.5rem" }}>
             <Link href="/">{themeConfig.logo}</Link>
-          </FP>
+          </Box>
         </li>
         {pageMap.map((item) => {
           if (item.kind === "MdxPage" && item.route !== "/") {
@@ -32,9 +32,9 @@ export default function Layout({
         })}
       </Nav>
       <Header>
-        <FP as="h2" styles={{ "--fs": "var(--h1)" }}>
+        <Title elm="h2" styles={{ "--fs": "var(--h1)" }}>
           {themeConfig.logo}
-        </FP>
+        </Title>
         <p>
           <Button
             type="button"
