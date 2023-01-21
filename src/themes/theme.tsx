@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Nav, { NavItem } from "../components/nav";
-import { FP, Box, Button, Aside, Header, Main, Footer, Section, Article, Title } from "@fpkit/react";
+import { Box, Button, Aside, Header, Main, Footer, Section, Article, Title } from "@fpkit/react";
 
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
