@@ -1,6 +1,7 @@
-// import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from 'react'
+import { DocsThemeConfig } from 'nextra-theme-docs'
 
-export default {
+const config: DocsThemeConfig = {
   logo: <span>Nextra Base</span>,
   project: {
     link: 'https://github.com/shuding/nextra-docs-template',
@@ -13,3 +14,5 @@ export default {
     text: 'Nextra Docs Template',
   },
 }
+
+export default config
