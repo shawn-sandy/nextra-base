@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fpkit/react': ^0.2.46
+  '@fpkit/react': ^0.2.48
   '@types/node': 18.11.18
   next: ^13.1.4
   nextra: 2.2.10
@@ -13,7 +13,7 @@ specifiers:
   typescript: ^4.9.4
 
 dependencies:
-  '@fpkit/react': 0.2.46
+  '@fpkit/react': 0.2.48
   next: 13.1.4_biqbaboplfbrettd7655fr4n2y
   nextra: 2.2.10_gru2niblrprbai56sdagiiy5sa
   nextra-theme-docs: 2.2.10_gru2niblrprbai56sdagiiy5sa
@@ -35,8 +35,8 @@ packages:
       regenerator-runtime: 0.13.11
     dev: false
 
-  /@fpkit/react/0.2.46:
-    resolution: {integrity: sha512-Qoa3uWPQzytqPFku3FXtPPQH1bXdDw6vjF5YCYwJQDTOemXKlGgq48I64N2W2EsXW6UkNoDRR4s1PsHVvHiMjQ==}
+  /@fpkit/react/0.2.48:
+    resolution: {integrity: sha512-Ina+o6hAGY8dGj+NBS30xTMY6dT4pDCS9zqsTVbE8kduAfjIUa7sCcNi0f53lGwGYH8eG35hO5vURNOoYi94sA==}
     dependencies:
       '@shawnsandy/first-paint': 2.17.32
       focus-trap: 7.2.0
