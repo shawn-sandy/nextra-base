@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fpkit/react': 0.2.46
+  '@fpkit/react': 0.2.50
   '@types/node': 18.11.18
   next: ^13.1.4
   nextra: 2.2.10
@@ -13,7 +13,7 @@ specifiers:
   typescript: ^4.9.4
 
 dependencies:
-  '@fpkit/react': 0.2.46
+  '@fpkit/react': 0.2.50
   next: 13.1.4_biqbaboplfbrettd7655fr4n2y
   nextra: 2.2.10_gru2niblrprbai56sdagiiy5sa
   nextra-theme-docs: 2.2.10_gru2niblrprbai56sdagiiy5sa
@@ -35,10 +35,10 @@ packages:
       regenerator-runtime: 0.13.11
     dev: false
 
-  /@fpkit/react/0.2.46:
-    resolution: {integrity: sha512-Qoa3uWPQzytqPFku3FXtPPQH1bXdDw6vjF5YCYwJQDTOemXKlGgq48I64N2W2EsXW6UkNoDRR4s1PsHVvHiMjQ==}
+  /@fpkit/react/0.2.50:
+    resolution: {integrity: sha512-+AomHKdNuogmFTL/+vhkJrP19JTtITzStEwWaKB73HaC2e7/4Qvr9Gtaz/9WPr9tPPfhG3HgH8ABL4Mn8WamzQ==}
     dependencies:
-      '@shawnsandy/first-paint': 2.17.32
+      '@shawnsandy/first-paint': 2.17.33
       focus-trap: 7.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -331,8 +331,8 @@ packages:
     resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
     dev: false
 
-  /@shawnsandy/first-paint/2.17.32:
-    resolution: {integrity: sha512-OcbqJ7EaWykZA9EPQOs52KzFkH7LgUF4EmcjDwd36Zykvr1MdiSFPHEF5n9HCC3Z6alP3Gv04lsEyKrWEarLSg==}
+  /@shawnsandy/first-paint/2.17.33:
+    resolution: {integrity: sha512-L1/OfjmyM6tVjqWtkK2KnyrpoIKTJReB7225XBsMaKvn5wHsvDBJ8qZxepOkScqgx7MUTW/KN9VhUeDckjHQqg==}
     dev: false
 
   /@swc/helpers/0.4.14:
@@ -1257,13 +1257,13 @@ packages:
       uvu: 0.5.6
     dev: false
 
-  /micromark-extension-mdx-expression/1.0.3:
-    resolution: {integrity: sha512-TjYtjEMszWze51NJCZmhv7MEBcgYRgb3tJeMAJ+HQCAaZHHRBaDCccqQzGizR/H4ODefP44wRTgOn2vE5I6nZA==}
+  /micromark-extension-mdx-expression/1.0.4:
+    resolution: {integrity: sha512-TCgLxqW6ReQ3AJgtj1P0P+8ZThBTloLbeb7jNaqr6mCOLDpxUiBFE/9STgooMZttEwOQu5iEcCCa3ZSDhY9FGw==}
     dependencies:
-      micromark-factory-mdx-expression: 1.0.6
+      micromark-factory-mdx-expression: 1.0.7
       micromark-factory-space: 1.0.0
       micromark-util-character: 1.1.0
-      micromark-util-events-to-acorn: 1.2.0
+      micromark-util-events-to-acorn: 1.2.1
       micromark-util-symbol: 1.0.1
       micromark-util-types: 1.0.2
       uvu: 0.5.6
@@ -1274,7 +1274,7 @@ packages:
     dependencies:
       '@types/acorn': 4.0.6
       estree-util-is-identifier-name: 2.1.0
-      micromark-factory-mdx-expression: 1.0.6
+      micromark-factory-mdx-expression: 1.0.7
       micromark-factory-space: 1.0.0
       micromark-util-character: 1.1.0
       micromark-util-symbol: 1.0.1
@@ -1294,7 +1294,7 @@ packages:
     dependencies:
       micromark-core-commonmark: 1.0.6
       micromark-util-character: 1.1.0
-      micromark-util-events-to-acorn: 1.2.0
+      micromark-util-events-to-acorn: 1.2.1
       micromark-util-symbol: 1.0.1
       micromark-util-types: 1.0.2
       unist-util-position-from-estree: 1.1.2
@@ -1307,7 +1307,7 @@ packages:
     dependencies:
       acorn: 8.8.1
       acorn-jsx: 5.3.2_acorn@8.8.1
-      micromark-extension-mdx-expression: 1.0.3
+      micromark-extension-mdx-expression: 1.0.4
       micromark-extension-mdx-jsx: 1.0.3
       micromark-extension-mdx-md: 1.0.0
       micromark-extension-mdxjs-esm: 1.0.3
@@ -1332,12 +1332,12 @@ packages:
       uvu: 0.5.6
     dev: false
 
-  /micromark-factory-mdx-expression/1.0.6:
-    resolution: {integrity: sha512-WRQIc78FV7KrCfjsEf/sETopbYjElh3xAmNpLkd1ODPqxEngP42eVRGbiPEQWpRV27LzqW+XVTvQAMIIRLPnNA==}
+  /micromark-factory-mdx-expression/1.0.7:
+    resolution: {integrity: sha512-QAdFbkQagTZ/eKb8zDGqmjvgevgJH3+aQpvvKrXWxNJp3o8/l2cAbbrBd0E04r0Gx6nssPpqWIjnbHFvZu5qsQ==}
     dependencies:
       micromark-factory-space: 1.0.0
       micromark-util-character: 1.1.0
-      micromark-util-events-to-acorn: 1.2.0
+      micromark-util-events-to-acorn: 1.2.1
       micromark-util-symbol: 1.0.1
       micromark-util-types: 1.0.2
       unist-util-position-from-estree: 1.1.2
@@ -1418,8 +1418,8 @@ packages:
     resolution: {integrity: sha512-U2s5YdnAYexjKDel31SVMPbfi+eF8y1U4pfiRW/Y8EFVCy/vgxk/2wWTxzcqE71LHtCuCzlBDRU2a5CQ5j+mQA==}
     dev: false
 
-  /micromark-util-events-to-acorn/1.2.0:
-    resolution: {integrity: sha512-WWp3bf7xT9MppNuw3yPjpnOxa8cj5ACivEzXJKu0WwnjBYfzaBvIAT9KfeyI0Qkll+bfQtfftSwdgTH6QhTOKw==}
+  /micromark-util-events-to-acorn/1.2.1:
+    resolution: {integrity: sha512-mkg3BaWlw6ZTkQORrKVBW4o9ICXPxLtGz51vml5mQpKFdo9vqIX68CAx5JhTOdjQyAHH7JFmm4rh8toSPQZUmg==}
     dependencies:
       '@types/acorn': 4.0.6
       '@types/estree': 1.0.0
