@@ -19,9 +19,10 @@
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "@fpkit/react": "0.2.50",
-    "next": "^13.1.4",
-    "nextra": "2.2.10",
-    "nextra-theme-docs": "2.2.10",
+    "lodash.get": "^4.4.2",
+    "next": "^13.1.6",
+    "nextra": "2.2.14",
+    "nextra-theme-docs": "2.2.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

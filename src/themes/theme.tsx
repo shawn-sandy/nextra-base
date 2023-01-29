@@ -1,12 +1,23 @@
 import Link from "next/link";
 import Nav, { NavItem } from "@/components/nav";
-import { Box, Button, Aside, Header, Main, Footer, Section, Article, Title } from "@fpkit/react";
+import ThemeHeader from "@/components/theme-header";
+import {
+  Box,
+  Aside,
+  Main,
+  Footer,
+  Section,
+  Article,
+  Title,
+} from "@fpkit/react";
 
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
 import useTilg from "tilg";
 
-import type { NextraThemeLayoutProps } from "../types";
+import get from "lodash.get";
+
+import type { NextraThemeLayoutProps } from "nextra";
 
 export default function Layout({
   children,
@@ -14,7 +25,13 @@ export default function Layout({
   themeConfig,
 }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
-  useTilg();
+
+  const mdxPages = pageMap.filter((item) => item.kind === "MdxPage");
+
+  const frontMatter = mdxPages.filter(
+    // @ts-ignore
+    (item) => item?.frontMatter !== undefined
+  );
 
   return (
     <>
@@ -25,32 +42,42 @@ export default function Layout({
           </Box>
         </li>
         {pageMap.map((item) => {
-          if (item.kind === "MdxPage" && item.route !== "/") {
+          if (
+            item.kind === "MdxPage" &&
+            item.route !== "/" &&
+            item.frontMatter !== undefined
+          ) {
             return <NavItem key={item.name} item={item} />;
           }
           return null;
         })}
       </Nav>
-      <Header>
-        <Title elm="h2" styles={{ "--fs": "var(--h1)" }}>
-          {themeConfig.logo}
-        </Title>
-        <p>
-          <Button
-            type="button"
-            data-variant="primary"
-            styles={{ "--btn-radius": "var(--btn-pill)" }}
-          >
-            Get Started
-          </Button>
-        </p>
-      </Header>
+      <ThemeHeader title={themeConfig.logo} />
       <Main>
         <Section data-content>
           <Article>
-            { (pageOpts.route === '/') ? <h1>Home</h1> : children }
-            
-            </Article>
+            {pageOpts.route === "/" ? (
+              <>
+                {pageMap.map((item) => {
+                  if (
+                    item.kind === "MdxPage" &&
+                    item.route !== "/" &&
+                    item.frontMatter !== undefined
+                  ) {
+                    return (
+                      <Article key={item.name}>
+                        <Title elm="h3">{item.frontMatter.title}</Title>
+                        <p>{item.frontMatter.description}</p>
+                      </Article>
+                    );
+                  }
+                  return null;
+                })}
+              </>
+            ) : (
+              children
+            )}
+          </Article>
           <Aside>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
@@ -63,7 +90,6 @@ export default function Layout({
       </Main>
       <hr />
       <Footer>
- 
         <p>Copyright &copy; 2022</p>
       </Footer>
     </>
