@@ -46,7 +46,6 @@ export default function Layout({
           return null;
         })}
       </Nav>
-
       <ThemeHeader title={themeConfig.logo} />
       <Main>
         <Section data-content>
@@ -61,15 +60,13 @@ export default function Layout({
           </Article>
           <Aside>
             <ul data-fp-list="unstyled">
-              <ArticleList pageMap={pageMap} as="li" showDescription={false} />
+              <ArticleList
+                pageMap={pageMap}
+                as="li"
+                showDescription={false}
+                elm="h4"
+              />
             </ul>
-            <hr />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-              quas non laborum repudiandae earum eveniet perferendis vitae
-              veritatis in accusamus esse necessitatibus eum, obcaecati ut nobis
-              similique laboriosam sint iusto?
-            </p>
           </Aside>
         </Section>
       </Main>

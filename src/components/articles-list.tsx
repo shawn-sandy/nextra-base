@@ -1,19 +1,20 @@
 import Rect from "react";
 import { PageOpts } from "nextra";
-import { Article, FP, Title } from "@fpkit/react";
+import { FP, Title } from "@fpkit/react";
+import Link from "next/link";
 
 export type listProps = Pick<PageOpts, "pageMap">;
 
 export type ArticleListProps = {
   showDescription?: boolean;
   elm?: "h2" | "h3" | "h4" | "h5" | "h6";
-  as?: "article" | "li" | "div";
+  as?: "article" | "li";
 } & listProps;
 
 export const ArticleList = ({
   pageMap,
   showDescription = true,
-  elm = "h3",
+  elm = "h2",
   as = "article",
   ...props
 }: ArticleListProps) => {
@@ -27,9 +28,22 @@ export const ArticleList = ({
         ) {
           return (
             <>
-              <FP as={as} key={item.name} styles={{ marginBottom: ".5rem" }} {...props}>
-                <Title elm={elm}>{item.frontMatter.title}</Title>
-                {!!showDescription && <p>{item.frontMatter.description}</p>}
+              <FP
+                as={as}
+                key={item.name}
+                styles={{ marginBottom: ".5rem" }}
+                {...props}
+              >
+                {!!showDescription ? (
+                  <>
+                    <Title elm={elm}>
+                      <Link href={item.route}>{item.frontMatter.title}</Link>
+                    </Title>
+                    <p>{item.frontMatter.description}</p>
+                  </>
+                ) : (
+                  <Link href={item.route}>{item.frontMatter.title}</Link>
+                )}
               </FP>
             </>
           );
