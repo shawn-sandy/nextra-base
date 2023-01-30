@@ -35,16 +35,6 @@ export default function Layout({
             <Link href="/">{themeConfig.logo}</Link>
           </Box>
         </li>
-        {pageMap.map((item) => {
-          if (
-            item.kind === "MdxPage" &&
-            item.route !== "/" &&
-            item.frontMatter !== undefined
-          ) {
-            return <NavItem key={item.name} item={item} />;
-          }
-          return null;
-        })}
       </Nav>
       <ThemeHeader title={themeConfig.logo} />
       <Main>
