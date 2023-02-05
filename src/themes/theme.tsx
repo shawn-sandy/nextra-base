@@ -14,19 +14,14 @@ import {
 
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
-import useTilg from "tilg";
-
-import get from "lodash.get";
-
 import type { NextraThemeLayoutProps } from "nextra";
 
 export default function Layout({
   children,
   pageOpts,
-  themeConfig,
+  themeConfig
 }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
-
   return (
     <>
       <Nav>

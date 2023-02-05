@@ -1,7 +1,7 @@
-import Rect from "react";
 import { PageOpts } from "nextra";
 import { FP, Title } from "@fpkit/react";
 import Link from "next/link";
+import React from "react";
 
 export type listProps = Pick<PageOpts, "pageMap">;
 
@@ -30,7 +30,7 @@ export const ArticleList = ({
             <>
               <FP
                 as={as}
-                key={item.name}
+                key={React.useId()}
                 styles={{ marginBottom: ".5rem" }}
                 {...props}
               >
