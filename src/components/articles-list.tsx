@@ -27,25 +27,23 @@ export const ArticleList = ({
           item.frontMatter !== undefined
         ) {
           return (
-            <>
-              <FP
-                as={as}
-                key={React.useId()}
-                styles={{ marginBottom: ".5rem" }}
-                {...props}
-              >
-                {!!showDescription ? (
-                  <>
-                    <Title elm={elm}>
-                      <Link href={item.route}>{item.frontMatter.title}</Link>
-                    </Title>
-                    <p>{item.frontMatter.description}</p>
-                  </>
-                ) : (
-                  <Link href={item.route}>{item.frontMatter.title}</Link>
-                )}
-              </FP>
-            </>
+            <FP
+              as={as}
+              key={React.useId()}
+              styles={{ marginBottom: ".5rem" }}
+              {...props}
+            >
+              {!!showDescription ? (
+                <>
+                  <Title elm={elm}>
+                    <Link href={item.route}>{item.frontMatter.title}</Link>
+                  </Title>
+                  <p>{item.frontMatter.description}</p>
+                </>
+              ) : (
+                <Link href={item.route}>{item.frontMatter.title}</Link>
+              )}
+            </FP>
           );
         }
         return null;
