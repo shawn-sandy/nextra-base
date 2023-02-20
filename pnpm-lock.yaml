@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fpkit/react': 0.2.51
+  '@shawnsandy/first-paint': ^2.17.34
   '@types/node': 18.11.18
   dot-path-value: ^0.0.6
   lodash.get: ^4.4.2
@@ -16,6 +17,7 @@ specifiers:
 
 dependencies:
   '@fpkit/react': 0.2.51
+  '@shawnsandy/first-paint': 2.17.34
   dot-path-value: 0.0.6
   lodash.get: 4.4.2
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
