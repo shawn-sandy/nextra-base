@@ -8,8 +8,7 @@ import {
   Main,
   Footer,
   Section,
-  Article,
-  Title,
+  Article
 } from "@fpkit/react";
 
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
@@ -25,11 +24,13 @@ export default function Layout({
   return (
     <>
       <Nav>
-        <li>
-          <Box as="h1" styles={{ "--fs": "1.5rem" }}>
-            <Link href="/">{themeConfig.logo}</Link>
-          </Box>
-        </li>
+        <ul>
+          <li>
+            <Box as="h1" styles={{ "--fs": "1.5rem" }}>
+              <Link href="/">{themeConfig.logo}</Link>
+            </Box>
+          </li>
+        </ul>
       </Nav>
       <ThemeHeader title={themeConfig.logo} />
       <Main>

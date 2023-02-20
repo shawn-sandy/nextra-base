@@ -8,10 +8,10 @@ export interface NavItemProps {
     route: string;
   }
 }
-export default function Nav({ children }: { children: React.ReactNode }) {
+export default function Nav({ children, ...props }: { children: React.ReactNode }) {
   return (
-    <FP as="nav">
-      <ul>{children}</ul>
+    <FP as="nav" {...props}>
+      {children}
     </FP>
   );
 }
