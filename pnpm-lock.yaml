@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fpkit/react': 0.2.51
-  '@shawnsandy/first-paint': ^2.17.34
+  '@fpkit/react': 0.2.52
+  '@shawnsandy/first-paint': ^2.17.37
   '@types/node': 18.11.18
   dot-path-value: ^0.0.6
   lodash.get: ^4.4.2
@@ -16,8 +16,8 @@ specifiers:
   typescript: ^4.9.5
 
 dependencies:
-  '@fpkit/react': 0.2.51
-  '@shawnsandy/first-paint': 2.17.34
+  '@fpkit/react': 0.2.52
+  '@shawnsandy/first-paint': 2.17.37
   dot-path-value: 0.0.6
   lodash.get: 4.4.2
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
@@ -34,17 +34,17 @@ devDependencies:
 
 packages:
 
-  /@babel/runtime/7.20.13:
-    resolution: {integrity: sha512-gt3PKXs0DBoL9xCvOIIZ2NEqAGZqHjAnmVbfQtB620V0uReIQutpel14KcneZuer7UioY8ALKZ7iocavvzTNFA==}
+  /@babel/runtime/7.21.0:
+    resolution: {integrity: sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
     dev: false
 
-  /@fpkit/react/0.2.51:
-    resolution: {integrity: sha512-711tmsBIMWt2d/0DEH9CDW+xVlt/1Qin/yg0LNoWwj0DdEivgyv65yUTx99wqyJw7v4yaKPeHaWEMxLLHDMI4w==}
+  /@fpkit/react/0.2.52:
+    resolution: {integrity: sha512-Sa5kERg4NuinW6xHoAxeINMHzlzUhwrxcByVLVXjNbbHNmk0nKtoj5jSRA4Tk+H/cb2GiGDbaYV/RD6JBiaHTQ==}
     dependencies:
-      '@shawnsandy/first-paint': 2.17.34
+      '@shawnsandy/first-paint': 2.17.37
       focus-trap: 7.3.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -337,8 +337,8 @@ packages:
     resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
     dev: false
 
-  /@shawnsandy/first-paint/2.17.34:
-    resolution: {integrity: sha512-MAw2QfAFhUIMD+rpiUKdocfeZAQAdK14MhFkg++ZyRCTgmr+igCRDD9fN0CTA1OskzkXC3pR/SQEiMGJMBoZZA==}
+  /@shawnsandy/first-paint/2.17.37:
+    resolution: {integrity: sha512-ipAKvPiXhkELnM+1XNjxr7P3+JKFNfjnmvCV+Tzh3giL3FaGq7s8aqb1uFXmT+gTm8iJ3wcakq1oDNyV2a/4cQ==}
     dev: false
 
   /@swc/helpers/0.4.14:
@@ -971,7 +971,7 @@ packages:
   /match-sorter/6.3.1:
     resolution: {integrity: sha512-mxybbo3pPNuA+ZuCUhm5bwNkXrJTbsk5VWbR5wiwz/GC6LIiegBGn2w3O08UG/jdbYLinw51fSQ5xNU1U3MgBw==}
     dependencies:
-      '@babel/runtime': 7.20.13
+      '@babel/runtime': 7.21.0
       remove-accents: 0.4.2
     dev: false
 
