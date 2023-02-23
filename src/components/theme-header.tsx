@@ -15,7 +15,7 @@ export const ThemeHeader = ({ title, ctaLabel }: HeaderProps) => {
           <Button
             type="button"
             data-variant="primary"
-            styles={{ "--btn-radius": "var(--btn-pill)" }}
+            data-style="pill lg"
           >
             { ctaLabel || 'Get Started' }
           </Button>

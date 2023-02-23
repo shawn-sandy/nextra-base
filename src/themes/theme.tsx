@@ -18,9 +18,10 @@ import type { NextraThemeLayoutProps } from "nextra";
 export default function Layout({
   children,
   pageOpts,
-  themeConfig
+  themeConfig,
 }: NextraThemeLayoutProps) {
-  const { pageMap } = pageOpts;
+  const { pageMap, title, headings, flexsearch } = pageOpts;
+  console.log({headings});
   return (
     <>
       <Nav>
