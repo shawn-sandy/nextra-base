@@ -20,8 +20,8 @@ export default function Layout({
   pageOpts,
   themeConfig,
 }: NextraThemeLayoutProps) {
-  const { pageMap, title, headings, flexsearch } = pageOpts;
-  console.log({headings});
+  const { pageMap, title, headings } = pageOpts;
+  console.log({pageOpts});
   return (
     <>
       <Nav>
@@ -36,7 +36,7 @@ export default function Layout({
       <ThemeHeader title={themeConfig.logo} />
       <Main>
         <Section data-content>
-          <Article>
+          <Article styles={{ minWidth: '90%'}}>
             {pageOpts.route === "/" ? (
               <>
                 <ArticleList pageMap={pageMap} />
@@ -45,7 +45,7 @@ export default function Layout({
               children
             )}
           </Article>
-          <Aside>
+          <Aside styles={{ maxWidth: '18vw'}}>
             <ul data-fp-list="unstyled">
               <ArticleList
                 pageMap={pageMap}
@@ -62,5 +62,4 @@ export default function Layout({
         <p>Copyright &copy; 2022</p>
       </Footer>
     </>
-  );
-}
+  )};
