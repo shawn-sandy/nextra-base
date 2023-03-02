@@ -22,8 +22,13 @@ export default function Layout({
   themeConfig
 }: NextraThemeLayoutProps) {
   
-  const { dirList, posts } = usePageOpts({pageOpts});
+  const { dirList, posts, postList} = usePageOpts({pageOpts});
   const { pageMap, title, headings } = pageOpts;
+
+  postList.map((item) => {
+    const { route, frontMatter } = item;
+    console.log(frontMatter);
+  });
   
   return (
     <>
@@ -42,7 +47,7 @@ export default function Layout({
           <Article>
             {pageOpts.route === "/" ? (
               <>
-                <ArticleList pageMap={pageMap} />
+                <ArticleList pageMap={postList} />
               </>
             ) : (
               children

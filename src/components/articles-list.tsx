@@ -10,6 +10,7 @@ export type ArticleListProps = {
   showDescription?: boolean;
   elm?: "h2" | "h3" | "h4" | "h5" | "h6";
   as?: "article" | "li";
+  postList?: [];
 } & listProps;
 
 
@@ -18,6 +19,7 @@ export const ArticleList = ({
   showDescription = true,
   elm = "h2",
   as = "article",
+  postList,
   ...props
 }: ArticleListProps) => {
   return (
@@ -25,9 +27,10 @@ export const ArticleList = ({
       {pageMap.map((item) => {
         if (
           item.kind === "MdxPage" &&
-          item.route !== "/" &&
           item.frontMatter !== undefined
         ) {
+          const { route } = item;
+          const { title, description } = item.frontMatter;
           return (
             <FP
               as={as}
@@ -38,12 +41,12 @@ export const ArticleList = ({
               {!!showDescription ? (
                 <>
                   <Title elm={elm}>
-                    <Link href={item.route}>{item.frontMatter.title}</Link>
+                    <Link href={route}>{title}</Link>
                   </Title>
-                  <p>{item.frontMatter.description}</p>
+                  <p>{description}</p>
                 </>
               ) : (
-                <Link href={item.route}>{item.frontMatter.title}</Link>
+                <Link href={route}>{item.frontMatter.title}</Link>
               )}
             </FP>
           );
