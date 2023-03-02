@@ -6,6 +6,9 @@ export interface HeaderProps {
   ctaLabel?: React.ReactNode;
 }
 export const ThemeHeader = ({ title, ctaLabel }: HeaderProps) => {
+  if (!title) {
+    throw new Error("ThemeHeader requires a title prop");
+  }
   return (
     <Header>
       <Title elm="h2" styles={{ "--fs": "var(--h1)" }}>

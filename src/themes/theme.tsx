@@ -2,6 +2,7 @@ import Link from "next/link";
 import Nav, { NavItem } from "@/components/nav";
 import ThemeHeader from "@/components/theme-header";
 import ArticleList from "@/components/articles-list";
+import { usePageOpts, usePageOptsReadable } from "@/components/usePageOpts";
 import {
   Box,
   Aside,
@@ -18,10 +19,13 @@ import type { NextraThemeLayoutProps } from "nextra";
 export default function Layout({
   children,
   pageOpts,
-  themeConfig,
+  themeConfig
 }: NextraThemeLayoutProps) {
+  
+  const { folders } = usePageOpts({pageOpts});
+  console.log({folders});
   const { pageMap, title, headings } = pageOpts;
-  console.log({pageOpts});
+  
   return (
     <>
       <Nav>
@@ -36,7 +40,7 @@ export default function Layout({
       <ThemeHeader title={themeConfig.logo} />
       <Main>
         <Section data-content>
-          <Article styles={{ minWidth: '90%'}}>
+          <Article>
             {pageOpts.route === "/" ? (
               <>
                 <ArticleList pageMap={pageMap} />
@@ -45,7 +49,7 @@ export default function Layout({
               children
             )}
           </Article>
-          <Aside styles={{ maxWidth: '18vw'}}>
+          <Aside>
             <ul data-fp-list="unstyled">
               <ArticleList
                 pageMap={pageMap}
