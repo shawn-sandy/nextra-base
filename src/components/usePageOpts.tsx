@@ -1,5 +1,5 @@
 import { NextraThemeLayoutProps } from "nextra";
-import { PageOpts } from "nextra";
+import {  PageOpts } from "nextra";
 
 export const usePageOpts = (options) => {
   const { pageOpts } = options;
@@ -7,7 +7,7 @@ export const usePageOpts = (options) => {
   const { pageMap } = pageOpts;
 
   if (!pageMap) {
-    return { contentDirs: [], postList: [] };
+    return { contentDirs: [], postList: [], posts: [] };
   }
 
   const postList: Array<PageOpts> = pageMap.filter(
@@ -17,10 +17,12 @@ export const usePageOpts = (options) => {
       item.frontMatter !== undefined
   );
 
+  const posts = postList.map((item) => item.frontMatter);
+
   const dirList: Array<PageOpts> = pageMap.filter(
     (item: { kind: string }) => item.kind === "Folder"
   );
 
-
-  return { dirList, postList};
+  
+  return { dirList, postList, posts};
 };

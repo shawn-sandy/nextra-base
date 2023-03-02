@@ -22,8 +22,7 @@ export default function Layout({
   themeConfig
 }: NextraThemeLayoutProps) {
   
-  const { dirList, postList } = usePageOpts({pageOpts});
-  console.log({dirList, postList});
+  const { dirList, posts } = usePageOpts({pageOpts});
   const { pageMap, title, headings } = pageOpts;
   
   return (
