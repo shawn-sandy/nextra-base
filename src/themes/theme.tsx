@@ -2,7 +2,7 @@ import Link from "next/link";
 import Nav, { NavItem } from "@/components/nav";
 import ThemeHeader from "@/components/theme-header";
 import ArticleList from "@/components/articles-list";
-import { usePageOpts, usePageOptsReadable } from "@/components/usePageOpts";
+import { usePageOpts } from "@/components/usePageOpts";
 import {
   Box,
   Aside,
@@ -22,8 +22,8 @@ export default function Layout({
   themeConfig
 }: NextraThemeLayoutProps) {
   
-  const { folders } = usePageOpts({pageOpts});
-  console.log({folders});
+  const { dirList, postList } = usePageOpts({pageOpts});
+  console.log({dirList, postList});
   const { pageMap, title, headings } = pageOpts;
   
   return (
