@@ -47,7 +47,8 @@ export default function Layout({
           <Article>
             {pageOpts.route === "/" ? (
               <>
-                <ArticleList pageMap={postList} />
+                <ArticleList postList={postList}
+                showDescription />
               </>
             ) : (
               children
@@ -56,9 +57,8 @@ export default function Layout({
           <Aside>
             <ul data-fp-list="unstyled">
               <ArticleList
-                pageMap={pageMap}
+                postList={postList} 
                 as="li"
-                showDescription={false}
                 elm="h4"
               />
             </ul>

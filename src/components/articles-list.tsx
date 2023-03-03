@@ -10,25 +10,26 @@ export type ArticleListProps = {
   showDescription?: boolean;
   elm?: "h2" | "h3" | "h4" | "h5" | "h6";
   as?: "article" | "li";
-  postList?: [];
-} & listProps;
+  postList?: Array<PageOpts>;
+} 
 
 
 export const ArticleList = ({
-  pageMap,
-  showDescription = true,
+  showDescription = false,
   elm = "h2",
   as = "article",
   postList,
   ...props
 }: ArticleListProps) => {
+  console.log({postList});
   return (
     <>
-      {pageMap.map((item) => {
-        if (
-          item.kind === "MdxPage" &&
-          item.frontMatter !== undefined
-        ) {
+    
+      {postList?.map((item) => {
+        // if (
+        //   item?.kind === "MdxPage" &&
+        //   item.frontMatter !== undefined
+        // ) {
           const { route } = item;
           const { title, description } = item.frontMatter;
           return (
@@ -50,7 +51,7 @@ export const ArticleList = ({
               )}
             </FP>
           );
-        }
+        // }
         return null;
       })}
     </>
