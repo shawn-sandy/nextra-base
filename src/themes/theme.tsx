@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Nav, { NavItem } from "@/components/nav";
+import Nav, { NavList } from "@/components/nav";
 import ThemeHeader from "@/components/theme-header";
 import ArticleList from "@/components/articles-list";
 import { usePageOpts } from "@/components/usePageOpts";
@@ -12,6 +12,8 @@ import {
   Article
 } from "@fpkit/react";
 
+
+
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
 import type { NextraThemeLayoutProps } from "nextra";
@@ -21,13 +23,14 @@ export default function Layout({
   pageOpts,
   themeConfig
 }: NextraThemeLayoutProps) {
+
+  console.log({ themeConfig});
+  
   
   const { dirList, posts, postList} = usePageOpts({pageOpts});
-  const { pageMap, title, headings } = pageOpts;
 
   postList.map((item) => {
     const { route, frontMatter } = item;
-    console.log(frontMatter);
   });
   
   return (
@@ -39,6 +42,7 @@ export default function Layout({
               <Link href="/">{themeConfig.logo}</Link>
             </Box>
           </li>
+          <NavList items={dirList} />  
         </ul>
       </Nav>
       <ThemeHeader title={themeConfig.logo} />

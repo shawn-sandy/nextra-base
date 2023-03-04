@@ -23,6 +23,5 @@ export const usePageOpts = (options) => {
     (item: { kind: string }) => item.kind === "Folder"
   );
 
-  
   return { dirList, postList, posts};
 };

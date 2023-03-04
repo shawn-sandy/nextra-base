@@ -21,15 +21,9 @@ export const ArticleList = ({
   postList,
   ...props
 }: ArticleListProps) => {
-  console.log({postList});
   return (
-    <>
-    
+    <>   
       {postList?.map((item) => {
-        // if (
-        //   item?.kind === "MdxPage" &&
-        //   item.frontMatter !== undefined
-        // ) {
           const { route } = item;
           const { title, description } = item.frontMatter;
           return (
@@ -51,7 +45,6 @@ export const ArticleList = ({
               )}
             </FP>
           );
-        // }
         return null;
       })}
     </>
