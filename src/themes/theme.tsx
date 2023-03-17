@@ -12,7 +12,7 @@ import {
   Article
 } from "@fpkit/react";
 
-
+import { useConfig } from "nextra-theme-docs";
 
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
@@ -24,11 +24,8 @@ export default function Layout({
   themeConfig
 }: NextraThemeLayoutProps) {
 
-  console.log({ themeConfig});
-  
-  
   const { dirList, posts, postList} = usePageOpts({pageOpts});
-
+  
   postList.map((item) => {
     const { route, frontMatter } = item;
   });
@@ -42,6 +39,8 @@ export default function Layout({
               <Link href="/">{themeConfig.logo}</Link>
             </Box>
           </li>
+        </ul>
+        <ul>
           <NavList items={dirList} />  
         </ul>
       </Nav>
@@ -71,7 +70,7 @@ export default function Layout({
       </Main>
       <hr />
       <Footer>
-        <p>Copyright &copy; 2022</p>
+        <p>&copy; {new Date().getFullYear()}</p>
       </Footer>
     </>
   )};

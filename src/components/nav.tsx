@@ -19,31 +19,34 @@ export default function Nav({
   );
 }
 
-export const NavItem = ({ item }) => {
+export const NavItem = ({ item, ...props }) => {
+
+  if(!item) {
+    throw new Error("NavItem requires a item prop");
+  }
  
   return (
     <>
-      <li key={item.name}>
-        <Link href={item.route}>{item.name}</Link>
+      <li {...props}>
+        <Link style={{textTransform: "capitalize"}} href={item.route}>{item.name}</Link>
       </li>
     </>
   );
 };
 
-
-export const NavList: React.FC<NavItemProps> = ({ items }) => {
-  
+export const NavList = ({ items }) => {
   return (
     <>
       {items?.map((item: {route: string, name: string}) => {
         return (
-          <>
-          <li key={React.useId()}>
-            <Link href={item?.route}>{item?.name}</Link>
-          </li>
-        </>
+          <NavItem key={React.useId()} item={item} />
         )
       })}
     </>
   );
 };
+
+
+
+
+

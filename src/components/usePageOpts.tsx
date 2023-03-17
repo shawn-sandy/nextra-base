@@ -1,4 +1,3 @@
-import { NextraThemeLayoutProps } from "nextra";
 import {  PageOpts } from "nextra";
 
 export const usePageOpts = (options) => {
@@ -23,5 +22,5 @@ export const usePageOpts = (options) => {
     (item: { kind: string }) => item.kind === "Folder"
   );
 
-  return { dirList, postList, posts};
+  return { dirList, postList, posts };
 };

@@ -1,5 +1,5 @@
 import { PageOpts } from "nextra";
-import { FP, Title } from "@fpkit/react";
+import { Box, Title } from "@fpkit/react";
 import Link from "next/link";
 import React from "react";
 
@@ -27,10 +27,9 @@ export const ArticleList = ({
           const { route } = item;
           const { title, description } = item.frontMatter;
           return (
-            <FP
+            <Box
               as={as}
               key={React.useId()}
-              styles={{ marginBottom: ".5rem" }}
               {...props}
             >
               {!!showDescription ? (
@@ -43,7 +42,7 @@ export const ArticleList = ({
               ) : (
                 <Link href={route}>{item.frontMatter.title}</Link>
               )}
-            </FP>
+            </Box>
           );
         return null;
       })}
