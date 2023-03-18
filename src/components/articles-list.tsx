@@ -37,8 +37,9 @@ export const ArticleList = ({
                   <Title elm={elm}>
                     
                     <Link href={route}>{title}</Link>
-                  </Title><hr />
+                  </Title>
                   <p>{description}</p>
+                  <hr />
                 </>
               ) : (
                 <Link href={route}>{item.frontMatter.title}</Link>
