@@ -1,6 +1,5 @@
 import { FP } from "@fpkit/react";
 import Link from "next/link";
-import { PageOpts } from "nextra";
 import React from "react";
 
 export interface NavItemProps {
