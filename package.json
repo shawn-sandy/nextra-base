@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/shawn-sandy/nextra-base#readme",
   "dependencies": {
-    "@fpkit/react": "0.2.52",
-    "@shawnsandy/first-paint": "^2.17.39",
+    "@fpkit/react": "0.2.61",
+    "@shawnsandy/first-paint": "^2.17.44",
     "dot-path-value": "^0.0.6",
     "lodash.get": "^4.4.2",
     "next": "^13.2.1",

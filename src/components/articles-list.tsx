@@ -35,8 +35,9 @@ export const ArticleList = ({
               {!!showDescription ? (
                 <>
                   <Title elm={elm}>
+                    
                     <Link href={route}>{title}</Link>
-                  </Title>
+                  </Title><hr />
                   <p>{description}</p>
                 </>
               ) : (

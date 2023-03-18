@@ -12,8 +12,6 @@ import {
   Article
 } from "@fpkit/react";
 
-import { useConfig } from "nextra-theme-docs";
-
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
 import type { NextraThemeLayoutProps } from "nextra";

@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fpkit/react': 0.2.52
-  '@shawnsandy/first-paint': ^2.17.39
+  '@fpkit/react': 0.2.61
+  '@shawnsandy/first-paint': ^2.17.44
   '@testing-library/dom': ^9.0.1
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^14.0.0
@@ -23,8 +23,8 @@ specifiers:
   typescript: ^4.9.5
 
 dependencies:
-  '@fpkit/react': 0.2.52
-  '@shawnsandy/first-paint': 2.17.39
+  '@fpkit/react': 0.2.61
+  '@shawnsandy/first-paint': 2.17.44
   dot-path-value: 0.0.6
   lodash.get: 4.4.2
   next: 13.2.1_biqbaboplfbrettd7655fr4n2y
@@ -399,10 +399,10 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@fpkit/react/0.2.52:
-    resolution: {integrity: sha512-Sa5kERg4NuinW6xHoAxeINMHzlzUhwrxcByVLVXjNbbHNmk0nKtoj5jSRA4Tk+H/cb2GiGDbaYV/RD6JBiaHTQ==}
+  /@fpkit/react/0.2.61:
+    resolution: {integrity: sha512-W6hM4YkMnOn8uzK0gUIFF8cDxr4Hsb6uVX4ye9cYIJ8ionQhIP8FADJf1os3Qn+++kq/opDbCd9M/FSaPpTC0w==}
     dependencies:
-      '@shawnsandy/first-paint': 2.17.39
+      '@shawnsandy/first-paint': 2.17.44
       focus-trap: 7.3.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -962,8 +962,8 @@ packages:
     resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
     dev: false
 
-  /@shawnsandy/first-paint/2.17.39:
-    resolution: {integrity: sha512-fBN9ohmsYhhtwbygspLL93+iUc99T1eAFDrKL7GjQ2z1KUJXRc50wzJCMIyOfGOW09i4IxaiEG5uokUMKerm+A==}
+  /@shawnsandy/first-paint/2.17.44:
+    resolution: {integrity: sha512-j1CB1p8rOsEPnGd584qzKDepL8UPQ/e1/hb6/B4asAMY2yuWNEy1gzbw+qkzrz4rw+4dH47vCrWJsa4jNQAJjQ==}
     dev: false
 
   /@sinclair/typebox/0.25.24:
