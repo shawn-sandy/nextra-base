@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { NavList } from "../nav";
+import Nav, { NavList, NavItem } from "../nav";
 
 const MyComponent = () => (
   <>
@@ -29,8 +29,19 @@ const itemsArray = [
 
 describe("NavList", () => {
   test("should render NavList", () => {
-    render(<NavList items={itemsArray} />);
+    render(<Nav><NavList items={itemsArray} /></Nav>);
     expect(screen.getByText("home")).toBeInTheDocument();
     expect(screen.getByText("about")).toBeInTheDocument();
+  });
+});
+
+
+
+describe("NavItem", () => {
+  it("should render NavItem correctly", () => {
+    const { asFragment } = render(
+      <NavItem item={{name: "Home", route: "/"}} />
+    );
+    expect(asFragment()).toMatchSnapshot();
   });
 });

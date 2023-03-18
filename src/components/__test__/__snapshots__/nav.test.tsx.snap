@@ -1,5 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`NavItem should render NavItem correctly 1`] = `
+<DocumentFragment>
+  <li>
+    <a
+      href="/"
+      style="text-transform: capitalize;"
+    >
+      Home
+    </a>
+  </li>
+</DocumentFragment>
+`;
+
 exports[`nav renders nav 1`] = `
 {
   "asFragment": [Function],
