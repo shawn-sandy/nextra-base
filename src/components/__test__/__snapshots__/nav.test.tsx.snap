@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Nav should render Nav correctly 1`] = `
+<DocumentFragment>
+  <nav>
+    <li>
+      <a
+        href="/"
+        style="text-transform: capitalize;"
+      >
+        home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/about"
+        style="text-transform: capitalize;"
+      >
+        about
+      </a>
+    </li>
+  </nav>
+</DocumentFragment>
+`;
+
 exports[`NavItem should render NavItem correctly 1`] = `
 <DocumentFragment>
   <li>

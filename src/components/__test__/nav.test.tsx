@@ -11,6 +11,7 @@ describe("nav", () => {
   it("renders nav", () => {
     const component = render(<MyComponent />);
     expect(component).toMatchSnapshot();
+    
   });
 });
 
@@ -32,6 +33,7 @@ describe("NavList", () => {
     render(<Nav><NavList items={itemsArray} /></Nav>);
     expect(screen.getByText("home")).toBeInTheDocument();
     expect(screen.getByText("about")).toBeInTheDocument();
+    screen.logTestingPlaygroundURL();
   });
 });
 
@@ -42,6 +44,23 @@ describe("NavItem", () => {
     const { asFragment } = render(
       <NavItem item={{name: "Home", route: "/"}} />
     );
+    screen.logTestingPlaygroundURL();
+    expect(asFragment()).toMatchSnapshot();
+  });
+});
+
+describe("Nav", () => {
+  it("should render Nav correctly", () => {
+    const { asFragment } = render(
+      <Nav>
+        <NavList items={itemsArray} />
+      </Nav>
+    );
+    screen.logTestingPlaygroundURL();
+    const nav = screen.getByRole("navigation");
+    expect(nav).toBeInTheDocument();
+    const items = screen.getAllByRole("listitem");
+    expect(items).toHaveLength(itemsArray.length);
     expect(asFragment()).toMatchSnapshot();
   });
 });

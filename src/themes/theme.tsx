@@ -66,7 +66,7 @@ export default function Layout({
           </Aside>
         </Section>
       </Main>
-      <hr />
+    
       <Footer>
         <p>&copy; {new Date().getFullYear()}</p>
       </Footer>
