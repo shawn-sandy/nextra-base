@@ -56,11 +56,11 @@ describe("Nav", () => {
         <NavList items={itemsArray} />
       </Nav>
     );
-    screen.logTestingPlaygroundURL();
     const nav = screen.getByRole("navigation");
     expect(nav).toBeInTheDocument();
     const items = screen.getAllByRole("listitem");
     expect(items).toHaveLength(itemsArray.length);
     expect(asFragment()).toMatchSnapshot();
+    screen.logTestingPlaygroundURL();
   });
 });
