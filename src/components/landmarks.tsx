@@ -2,45 +2,77 @@
  * @fileoverview Landmarks components
  */
 
-import { FP } from "@fpkit/react";
+import { Tag } from "@fpkit/react";
 
-export const Header = ({ children, ...props }: { children: React.ReactNode }) => {
+export const Header = ({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+}) => {
   return (
-    <FP as="header" {...props}>
-      <FP as="section">{children}</FP>
-    </FP>
+    <Tag as="header" {...props}>
+      <Tag as="section">{children}</Tag>
+    </Tag>
   );
 };
 
 export const Main = ({ children, ...props }: { children: React.ReactNode }) => {
   return (
-    <FP as="main" {...props}>
+    <Tag as="main" {...props}>
       {children}
-    </FP>
+    </Tag>
   );
 };
 
-export const Footer = ({ children, ...props }: { children: React.ReactNode }) => {
+export const Footer = ({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+}) => {
   return (
-    <FP as="footer" {...props}>
-      <FP as="section">{children}</FP>
-    </FP>
+    <Tag as="footer" {...props}>
+      <Tag as="section">{children}</Tag>
+    </Tag>
   );
 };
 
-export const Aside = ({ children, ...props }: { children: React.ReactNode }) => {
+export const Aside = ({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+}) => {
   return (
-    <FP as="aside" {...props}>
-      <FP as="section">{children}</FP>
-    </FP>
+    <Tag as="aside" {...props}>
+      <Tag as="section">{children}</Tag>
+    </Tag>
   );
 };
 
-export const Section = ({ children, ...props }: { children: React.ReactNode }) => {
-  return <FP as="section" {...props}>{children}</FP>;
+export const Section = ({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+}) => {
+  return (
+    <Tag as="section" {...props}>
+      {children}
+    </Tag>
+  );
 };
 
-
-export const Article = ({ children, ...props }: { children: React.ReactNode }) => {
-  return <FP as="article" {...props}>{children}</FP>;
+export const Article = ({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+}) => {
+  return (
+    <Tag as="article" {...props}>
+      {children}
+    </Tag>
+  );
 };
