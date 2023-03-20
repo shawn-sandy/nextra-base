@@ -20,13 +20,13 @@
   },
   "homepage": "https://github.com/shawn-sandy/nextra-base#readme",
   "dependencies": {
-    "@fpkit/react": "0.2.61",
-    "@shawnsandy/first-paint": "^2.17.44",
+    "@fpkit/react": "0.2.62",
+    "@shawnsandy/first-paint": "^2.17.45",
     "dot-path-value": "^0.0.6",
     "lodash.get": "^4.4.2",
-    "next": "^13.2.1",
-    "nextra": "2.2.14",
-    "nextra-theme-docs": "2.2.14",
+    "next": "^13.2.4",
+    "nextra": "2.2.19",
+    "nextra-theme-docs": "2.2.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
