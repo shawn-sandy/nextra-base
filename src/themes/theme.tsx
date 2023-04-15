@@ -1,6 +1,6 @@
 import Nav from "@/components/nav";
 import ThemeHeader from "@/components/theme-header";
-import { NavBrand, PostsList, ThemeMain, NavList } from "@fpkit/nextjs";
+import { NavBrand, PostsList, ThemeMain, NavList, Toc } from "@fpkit/nextjs";
 import { FilterMdxPages, FilterPageType } from "@fpkit/nextjs/libs/libs";
 
 import { Footer } from "@fpkit/react";
@@ -16,12 +16,18 @@ export default function Layout({
   pageOpts,
   themeConfig,
 }: NextraThemeLayoutProps) {
-  const { pageMap } = pageOpts;
+  const { pageMap, headings } = pageOpts;
 
   const latest = FilterMdxPages(pageMap);
   const pages = FilterPageType(pageMap);
 
   const brand = { url: "/", logo: "Nextra Base" };
+
+  const SideBar = () => {
+    return <Toc items={headings} />;
+  };
+
+  console.log(<SideBar />);
 
   return (
     <>
@@ -30,7 +36,7 @@ export default function Layout({
         <NavList pages={pages} />
       </Nav>
       <ThemeHeader title={themeConfig.logo} />
-      <ThemeMain>
+      <ThemeMain sideBar={<SideBar />}>
         {pageOpts.route === "/" && latest.length > 0 ? (
           <PostsList postList={latest} showDescription />
         ) : (
