@@ -24,10 +24,15 @@ export default function Layout({
   const brand = { url: "/", logo: "Nextra Base" };
 
   const SideBar = () => {
-    return <Toc items={headings} />;
+    return (
+      <>
+        <Toc items={headings} />
+        <div>
+          <h3 data-fp-text="h3">Recent Posts</h3>
+        </div>
+      </>
+    );
   };
-
-  console.log(<SideBar />);
 
   return (
     <>
