@@ -12,8 +12,8 @@ dependencies:
     specifier: 0.2.70
     version: 0.2.70(react-dom@18.2.0)(react@18.2.0)
   '@shawnsandy/first-paint':
-    specifier: ^2.17.56
-    version: 2.17.56
+    specifier: ^2.17.59
+    version: 2.17.59
   dot-path-value:
     specifier: ^0.0.6
     version: 0.0.6
@@ -415,7 +415,7 @@ packages:
       react-dom: ^18.2.0
     dependencies:
       '@fpkit/react': 0.2.70(react-dom@18.2.0)(react@18.2.0)
-      '@shawnsandy/first-paint': 2.17.56
+      '@shawnsandy/first-paint': 2.17.59
       next: 13.4.6(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       nextra: 2.3.0(next@13.4.6)(react-dom@18.2.0)(react@18.2.0)
       nextra-theme-blog: 2.7.1(next@13.4.6)(nextra@2.3.0)(react-dom@18.2.0)(react@18.2.0)
@@ -431,7 +431,7 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@shawnsandy/first-paint': 2.17.56
+      '@shawnsandy/first-paint': 2.17.59
       focus-trap: 7.4.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -945,8 +945,8 @@ packages:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
     dev: false
 
-  /@shawnsandy/first-paint@2.17.56:
-    resolution: {integrity: sha512-GCUd2lF+MUGZptWcGhkThN6je5byc5dPeGbjOB0GJJdVRZctKvyL+xHvDZzSjagt7iQNKvf4OindfrHGCOI/VQ==}
+  /@shawnsandy/first-paint@2.17.59:
+    resolution: {integrity: sha512-hljkxYquL6A6ABUTKuQ4kxz+uZ1N9QAZtG+HiwCDZklLRupO4ef6KZAfVFTWG4Xh4xPhh5AkaPDfxLIkkmrhqQ==}
     dev: false
 
   /@sinclair/typebox@0.25.24:
@@ -1436,7 +1436,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001503
+      caniuse-lite: 1.0.30001504
       electron-to-chromium: 1.4.433
       node-releases: 2.0.12
       update-browserslist-db: 1.0.11(browserslist@4.21.9)
@@ -1480,8 +1480,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /caniuse-lite@1.0.30001503:
-    resolution: {integrity: sha512-Sf9NiF+wZxPfzv8Z3iS0rXM1Do+iOy2Lxvib38glFX+08TCYYYGR5fRJXk4d77C4AYwhUjgYgMsMudbh2TqCKw==}
+  /caniuse-lite@1.0.30001504:
+    resolution: {integrity: sha512-5uo7eoOp2mKbWyfMXnGO9rJWOGU8duvzEiYITW+wivukL7yHH4gX9yuRaobu6El4jPxo6jKZfG+N6fB621GD/Q==}
 
   /ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -3924,7 +3924,7 @@ packages:
       '@next/env': 13.4.6
       '@swc/helpers': 0.5.1
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001503
+      caniuse-lite: 1.0.30001504
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
